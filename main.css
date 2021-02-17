@@ -1,0 +1,70 @@
+*{
+    font-size: 20px;
+    font-family: arial;
+}
+.caja{
+   max-width: 100%;
+}
+body{
+    background-color: rgb(69, 182, 69);   
+}
+header{
+    background-color: rgb(0, 0, 0,0.4);
+    border-radius: 4px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+p{
+    display: inline-block;
+    margin-right: 20px;
+}
+.contenedor{
+   background-color: rgb(37, 35, 35,0.9);
+   height: 530px;
+   margin-right: auto;
+   margin-left: auto;
+   border-radius: 4px;
+   text-align: center;
+   position: relative;
+}
+.bot{
+    
+  
+
+    
+    cursor: pointer;
+    position: relative;
+    
+}
+span{
+    position: relative;
+    top: 8px;
+}
+#felicidades{
+    text-align: center;
+    color: blue;
+    font-size: 70px;
+}
+#tiempoRojo{
+    color: red;
+}
+#volverJugar{
+    
+    background-color: rgba(223, 31, 31, 0.9);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    text-align: start;
+}
+#volverJugar:hover{
+    background-color: rgb(248, 248, 145);
+}
+@media screen and (min-width:360px){
+
+    header{text-align: center;}
+    p,b,input{font-size: 18px;margin-top: 0;}
+    input{margin: 0; width: 130px;height: 30px;left: -0px;}
+}
