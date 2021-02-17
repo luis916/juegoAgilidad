@@ -1,3 +1,11 @@
+
+//Perdiste
+let perdiste = document.createElement('h1');
+let perdisteTexto = document.createTextNode('Haz perdido!!!');
+perdiste.style.color = 'red';
+perdiste.style.fontSize = '40px';
+perdiste.style.top = '70px';
+perdiste.appendChild(perdisteTexto);
 //Datos usuario
 const misPuntos = document.querySelector('#misPuntos');
 const tiempoRestante = document.querySelector('#tiempoRestante');
@@ -21,11 +29,12 @@ temporizador();
 // sumador de puntos
 function contadorPuntos(newPuntos){
     newPuntos;
-    if (misPuntos.textContent==20)
+    if (misPuntos.textContent==5)
     {  
         let h1 = document.createElement('h1');
         let h1Texto = document.createTextNode('Felicidades ganaste!!!');
-        imagen.style.display = 'none';
+        perdiste.style.display = 'none';
+        imagen.style.top = '-1000px';
         h1.appendChild(h1Texto);
         h1.style.fontSize = '31px';
         h1.style.marginLeft = '7px';
@@ -45,12 +54,7 @@ function contadorPuntos(newPuntos){
     }
     
 }
-let perdiste = document.createElement('h1');
-let perdisteTexto = document.createTextNode('Haz perdido!!!');
-perdiste.style.color = 'red';
-perdiste.style.fontSize = '40px';
-perdiste.style.top = '70px';
-perdiste.appendChild(perdisteTexto);
+
 bot.addEventListener('click',function(){
     let randomTop = Math.random()*480;
     let randomLeft = Math.random()*290;
