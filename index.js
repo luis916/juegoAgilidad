@@ -29,7 +29,7 @@ temporizador();
 // sumador de puntos
 function contadorPuntos(newPuntos){
     newPuntos;
-    if (misPuntos.textContent==5)
+    if (misPuntos.textContent==20)
     {  
         let h1 = document.createElement('h1');
         let h1Texto = document.createTextNode('Felicidades ganaste!!!');
